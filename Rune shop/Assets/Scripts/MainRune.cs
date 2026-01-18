@@ -17,10 +17,9 @@ public class MainRune
     {
         if (rune.element != element)
             return false;
-        if(rune.indicatorsVertical != indicatorsVertical)
-            return false;
-        if (rune.indicatorsHorizontal != indicatorsHorizontal)
-            return false;
+        if((rune.indicatorsVertical == indicatorsVertical && rune.indicatorsHorizontal == indicatorsHorizontal) ||
+            (rune.indicatorsVertical == indicatorsHorizontal && rune.indicatorsHorizontal == indicatorsVertical))
+            return true;
         return true;
     }
 }
