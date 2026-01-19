@@ -69,8 +69,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44428e8d37e5ef2458de47f86e7d1612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myMainRune:
+    element: 0
+    indicatorsVertical: 0
+    indicatorsHorizontal: 0
+  myActivationRune:
+    shape: 0
+    duration: 0
   UITextParent: {fileID: 4046597153645770261}
   UIText: {fileID: 7234120962418332984}
+  meshRenderer: {fileID: 3583792556293047894}
 --- !u!1 &4046597153645770261
 GameObject:
   m_ObjectHideFlags: 0

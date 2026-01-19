@@ -1585,6 +1585,17 @@ MonoBehaviour:
   customerPrefab: {fileID: 298362656582852698, guid: 2340dcaf9e2acbc43b030d8376324b5f, type: 3}
   spawnLocation: {fileID: 594640788}
   currentCustomer: {fileID: 0}
+  customerMats:
+  - {fileID: 2100000, guid: 37d1217c66ebc8e4d9e88b5090f67cbf, type: 2}
+  - {fileID: 2100000, guid: 81dcd1183996be9458c196accfd24570, type: 2}
+  - {fileID: 2100000, guid: 502ea2ce1df587a479485481ef8debad, type: 2}
+  mainRune:
+    element: 0
+    indicatorsVertical: 0
+    indicatorsHorizontal: 0
+  activationRune:
+    shape: 0
+    duration: 0
 --- !u!114 &350495777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8802,6 +8813,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 350495775}
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 1342465499}
@@ -8819,7 +8831,6 @@ SceneRoots:
   - {fileID: 766602943}
   - {fileID: 1807379651}
   - {fileID: 5819214865704793077}
-  - {fileID: 350495775}
   - {fileID: 1769804924}
   - {fileID: 1137546659}
   - {fileID: 6510435884303673042}

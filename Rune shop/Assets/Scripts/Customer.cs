@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor.SpeedTree.Importer;
 using UnityEngine;
 using UnityEngine.ProBuilder;
 using UnityEngine.ProBuilder.Shapes;
@@ -10,6 +11,12 @@ public class Customer : MonoBehaviour
 
     public GameObject UITextParent;
     public TextMeshProUGUI UIText;
+    public MeshRenderer meshRenderer;
+
+    public void SetVisual(Material newMat)
+    {
+        meshRenderer.materials = new Material[] { newMat };
+    }
 
     public void CreateOrder(int _option)
     {

@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Transform spawnLocation;
     public GameObject currentCustomer;
 
+    public Material[] customerMats;
+
+
     public MainRune mainRune;
     public ActivationRune activationRune;
 
@@ -31,6 +34,8 @@ public class GameManager : MonoBehaviour
             Destroy(currentCustomer);
         currentCustomer = Instantiate(customerPrefab, spawnLocation.position, Quaternion.Euler(90, 0 , 180));
         Customer cus = currentCustomer.GetComponent<Customer>();
+        cus.SetVisual(customerMats[customerID]);
+
         cus.CreateOrder(customerID);
         customerID++;
 
