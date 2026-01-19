@@ -11,7 +11,8 @@ public enum RuneType
 public enum Element
 {
     air,
-    water
+    water,
+    fire
 }
 
 [Serializable]
