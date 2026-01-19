@@ -18,9 +18,14 @@ public class Customer : MonoBehaviour
             case 0:
                 myMainRune = new MainRune(Element.water, Indicators.heat, Indicators.cold);
                 myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
-                SetUIText("I would like water that's hot and cold");
+                SetUIText("Ik wil een frikandelbroodje");
                 break;
             case 1:
+                myMainRune = new MainRune(Element.air, Indicators.heat, Indicators.lowDensity);
+                myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
+                SetUIText("I would like water that's hot and not very dense");
+                break;
+            case 2:
                 myMainRune = new MainRune(Element.air, Indicators.heat, Indicators.lowDensity);
                 myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
                 SetUIText("I would like water that's hot and not very dense");
