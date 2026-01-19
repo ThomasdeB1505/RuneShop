@@ -54,6 +54,13 @@ public class Drawing : MonoBehaviour
             runeAnimations[18].gameObject.SetActive(false);
             runeAnimations[19].gameObject.SetActive(false);
         }
+        else if (_index >= 20 && _index <= 23)
+        {
+            runeAnimations[20].gameObject.SetActive(false);
+            runeAnimations[21].gameObject.SetActive(false);
+            runeAnimations[22].gameObject.SetActive(false);
+            runeAnimations[23].gameObject.SetActive(false);
+        }
 
         runeAnimations[_index].gameObject.SetActive(true);
         runeAnimations[_index].Play(0);
