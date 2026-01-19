@@ -23,19 +23,19 @@ public class Customer : MonoBehaviour
         switch (_option)
         {
             case 0:
-                myMainRune = new MainRune(Element.water, Indicators.heat, Indicators.cold);
-                myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
-                SetUIText("Ik wil een frikandelbroodje");
+                myMainRune = new MainRune(Element.water, Indicators.heat, Indicators.heat);
+                myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.thirty);
+                SetUIText("I would like boiling hot water that fills my pot in half a minute with 1 1/3p");
                 break;
             case 1:
-                myMainRune = new MainRune(Element.air, Indicators.heat, Indicators.lowDensity);
-                myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
-                SetUIText("I would like water that's hot and not very dense");
+                myMainRune = new MainRune(Element.air, Indicators.cold, Indicators.inwardForce);
+                myActivationRune = new ActivationRune(PowerShape.hexagon, RuneDuration.five);
+                SetUIText("I need something that sucks out all the cold air with the most power you have in a few seconds");
                 break;
             case 2:
-                myMainRune = new MainRune(Element.air, Indicators.heat, Indicators.lowDensity);
-                myActivationRune = new ActivationRune(PowerShape.square, RuneDuration.sixty);
-                SetUIText("I would like water that's hot and not very dense");
+                myMainRune = new MainRune(Element.fire, Indicators.cold, Indicators.highDensity);
+                myActivationRune = new ActivationRune(PowerShape.triangle, RuneDuration.infinite);
+                SetUIText("Can you give me a small dense flame of 1p that keeps burning and doesn't burn my fingers?");
                 break;
         }
     }
