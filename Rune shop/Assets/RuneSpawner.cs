@@ -121,7 +121,23 @@ public class RuneSpawner : MonoBehaviour
     public void setDuration(int _duration) 
     {
         duration = (RuneDuration)_duration; 
-        everythingClicked[4] = true; 
+        everythingClicked[4] = true;
+
+        switch (_duration)
+        {
+            case 0:
+                activationRuneDrawing.TriggerAnimation(20);
+                break;
+            case 1:
+                activationRuneDrawing.TriggerAnimation(21);
+                break;
+            case 2:
+                activationRuneDrawing.TriggerAnimation(22);
+                break;
+            case 3:
+                activationRuneDrawing.TriggerAnimation(23);
+                break;
+        }
     }
 
     public void ResetRunes()
