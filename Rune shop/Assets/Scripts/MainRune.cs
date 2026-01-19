@@ -17,11 +17,16 @@ public class MainRune
 
     public bool Compare(MainRune rune)
     {
+        Debug.Log(element+ ", " + rune.element);
+        Debug.Log(indicatorsHorizontal + ", " + rune.indicatorsHorizontal);
+        Debug.Log(indicatorsVertical + ", " + rune.indicatorsVertical);
+
+
         if (rune.element != element)
             return false;
         if((rune.indicatorsVertical == indicatorsVertical && rune.indicatorsHorizontal == indicatorsHorizontal) ||
             (rune.indicatorsVertical == indicatorsHorizontal && rune.indicatorsHorizontal == indicatorsVertical))
             return true;
-        return true;
+        return false;
     }
 }

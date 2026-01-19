@@ -26,7 +26,8 @@ public class RuneSpawner : MonoBehaviour
     }
     public void setElement(int _element) 
     { 
-        element = (Element)_element; 
+        element = (Element)_element;
+        gameManager.mainRune.element = element;
         everythingClicked[0] = true; 
 
         switch(_element)
@@ -44,7 +45,9 @@ public class RuneSpawner : MonoBehaviour
     }
     public void setIndicatorsVertical(int _indicators) 
     {
-        indicatorsVertical = (Indicators)_indicators; 
+        indicatorsVertical = (Indicators)_indicators;
+        gameManager.mainRune.indicatorsVertical = indicatorsVertical;
+
         everythingClicked[1] = true;
         
         switch (_indicators)
@@ -71,7 +74,9 @@ public class RuneSpawner : MonoBehaviour
     }
     public void setIndicatorsHorizontal(int _indicators) 
     {
-        indicatorsHorizontal = (Indicators)_indicators; 
+        indicatorsHorizontal = (Indicators)_indicators;
+        gameManager.mainRune.indicatorsHorizontal = indicatorsHorizontal;
+
         everythingClicked[2] = true;
 
         switch (_indicators)
@@ -99,6 +104,7 @@ public class RuneSpawner : MonoBehaviour
     public void setShape(int _shape) 
     {
         shape = (PowerShape)_shape; 
+        gameManager.activationRune.shape = shape;
         everythingClicked[3] = true;
 
         switch (_shape)
@@ -120,7 +126,8 @@ public class RuneSpawner : MonoBehaviour
     }
     public void setDuration(int _duration) 
     {
-        duration = (RuneDuration)_duration; 
+        duration = (RuneDuration)_duration;
+        gameManager.activationRune.duration = duration;
         everythingClicked[4] = true;
 
         switch (_duration)

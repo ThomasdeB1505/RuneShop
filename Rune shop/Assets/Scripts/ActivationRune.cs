@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using static UnityEditor.Rendering.FilterWindow;
 
 [Serializable]
 public class ActivationRune
@@ -15,6 +16,8 @@ public class ActivationRune
 
     public bool Compare(ActivationRune rune)
     {
+        Debug.Log(shape + ", " + rune.shape);
+        Debug.Log(duration + ", " + rune.duration);
         if (rune.shape != shape)
             return false;
         if (rune.duration != duration)

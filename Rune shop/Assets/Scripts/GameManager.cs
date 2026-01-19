@@ -47,6 +47,9 @@ public class GameManager : MonoBehaviour
         if (!runeSpawner.checkIfEverythingGotClicked())
             return false;
         Customer cus = currentCustomer.GetComponent<Customer>();
+
+        Debug.Log(mainRune.Compare(cus.myMainRune));
+        Debug.Log(activationRune.Compare(cus.myActivationRune));
         if (!mainRune.Compare(cus.myMainRune) ||
             !activationRune.Compare(cus.myActivationRune))
             return false;
